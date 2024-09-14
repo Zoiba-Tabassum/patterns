@@ -2,14 +2,27 @@
 using namespace std;
 int main()
 {
-    int row, column;
- 
+    int row, column,n;
+ /*
   // Hollow rectangle
+  //-- Output
+  Enter number of rows            8
+  Enter number of columns         9
+* * * * * * * * * 
+*               * 
+*               * 
+*               * 
+*               * 
+*               * 
+*               * 
+* * * * * * * * * 
+  */
+// CODE--
+
   cout<<"Enter number of rows \t\t";
   cin >> row;
   cout<<"Enter number of columns \t";
   cin>> column;
-  int v=column-1;
   for (int i=0; i<row; i++){
     for (int j=0; j<column ; j++){
       if(j==0 || j==(column-1) || i==0 || i==(row-1) ){
@@ -22,6 +35,46 @@ int main()
     }
     cout<<endl;
   }
-  
 
+  
+  //Inverted Half Pyramid
+  //--Output
+/*
+Enter number of rows    8
+* * * * * * * *
+* * * * * * *
+* * * * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+*/
+  //CODE--
+  cout<<"Enter number of rows \t";
+  cin>>n;
+
+  for(int i=n; i>0; i--){
+    for (int j=0; j<i;j++){
+
+      cout<<"* ";
+    }
+    cout<<endl;
+  }
+
+  //Half Pyramid After 180 degreee rotation
+ // -- Output
+ /*
+
+ */
+ //CODE --
+ cout<< "Enter number of rows \t";
+ cin>>n;
+
+ for(int i=0;i<n;i++){
+  for (int j=0;j<i;j++){
+    cout<<"* ";
+  }
+  cout<<endl;
+ }
 }

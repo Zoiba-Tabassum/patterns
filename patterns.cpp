@@ -49,7 +49,9 @@ Enter number of rows    8
 * * *
 * *
 *
+
 */
+
   //CODE--
   cout<<"Enter number of rows \t";
   cin>>n;
@@ -62,9 +64,15 @@ Enter number of rows    8
     cout<<endl;
   }
 
-  //Half Pyramid After 180 degreee rotation
+  //Half Pyramid 
  // -- Output
  /*
+ Enter number of rows    5
+*
+* *
+* * *
+* * * *
+* * * * *
 
  */
  //CODE --
@@ -72,9 +80,36 @@ Enter number of rows    8
  cin>>n;
 
  for(int i=0;i<n;i++){
-  for (int j=0;j<i;j++){
+  
+  for (int j=0;j<i+1;j++){
     cout<<"* ";
   }
   cout<<endl;
  }
+
+ // Rhombous Star Pattern
+ //--Output
+ /*
+ Enter number of rows5
+* * * * *
+ * * * * *
+  * * * * *
+   * * * * *
+    * * * * *
+ */
+
+//CODE--
+cout<<"Enter number of rows";
+cin>>n;
+for(int i=0;i<n;i++){
+  for(int j=0;j<i;j++){
+    cout<<" ";
+  }
+  for(int j=0;j<n;j++){
+    cout<<"* ";
+  }
+  cout<<endl;
+}
+
+
 }

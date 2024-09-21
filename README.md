@@ -1,6 +1,7 @@
 PATTERNS
 
 - Hollow rectangle pattern
-- inverted triangle
+- inverted half pyramid
 - right triangle left
+- Rhombus Pattern
   

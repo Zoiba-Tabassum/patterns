@@ -111,5 +111,27 @@ for(int i=0;i<n;i++){
   cout<<endl;
 }
 
+//Triangle
+//--Output
+/*
+Enter number of rows    5
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+*/
 
+//CODE--
+ cout<<"Enter number of rows\t";
+cin>>n;
+for(int i=1;i<=n;i++){
+  for (int j=0;j<n-i;j++){
+    cout<<" ";
+  }
+  for (int j=0;j<i;j++){
+    cout<<"* ";
+  }
+  cout<<endl;
+}
 }

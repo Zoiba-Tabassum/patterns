@@ -90,7 +90,7 @@ Enter number of rows    8
  // Rhombous Star Pattern
  //--Output
  /*
- Enter number of rows5
+ Enter number of rows     5
 * * * * *
  * * * * *
   * * * * *
@@ -99,7 +99,7 @@ Enter number of rows    8
  */
 
 //CODE--
-cout<<"Enter number of rows";
+cout<<"Enter number of rows\t";
 cin>>n;
 for(int i=0;i<n;i++){
   for(int j=0;j<i;j++){
@@ -134,4 +134,24 @@ for(int i=1;i<=n;i++){
   }
   cout<<endl;
 }
+
+//Flipped simple pyramid
+//--Output
+/*
+
+*/
+
+//CODE--
+cout<<"Enter number of rows\t";
+cin >>n;
+for (int i=n;i>0;i--){
+  for(int j=0; j<i;j++){
+    cout<<"  ";
+  }
+  for(int j=0;j<=(n-i);j++){
+    cout<<" *";
+  }
+  cout<<endl;
+}
+
 }
